@@ -209,9 +209,10 @@ static const cy_stc_ble_gaps_t cy_ble_gaps =
     0x0009u,    /* Handle of the Central Address Resolution characteristic */
     0x000Bu,    /* Handle of the Resolvable Private Address Only characteristic */
 };
-static uint8_t cy_ble_attValues[0x11u] = {
+static uint8_t cy_ble_attValues[0x1Au] = {
     /* Device Name */
-    
+    (uint8_t)'t', (uint8_t)'e', (uint8_t)'s', (uint8_t)'t', (uint8_t)'_', (uint8_t)'n', (uint8_t)'g', (uint8_t)'o',
+(uint8_t)'c', 
 
     /* Appearance */
     0x00u, 0x00u, 
@@ -237,20 +238,20 @@ static uint8_t cy_ble_attValuesCCCD[CY_BLE_GATT_DB_CCCD_COUNT];
 #endif /* CY_BLE_GATT_DB_CCCD_COUNT != 0u */
 
 static cy_stc_ble_gatts_att_gen_val_len_t cy_ble_attValuesLen[0x08u] = {
-    { 0x0000u, (void *)&cy_ble_attValues[0] }, /* Device Name */
-    { 0x0002u, (void *)&cy_ble_attValues[0] }, /* Appearance */
-    { 0x0008u, (void *)&cy_ble_attValues[2] }, /* Peripheral Preferred Connection Parameters */
-    { 0x0001u, (void *)&cy_ble_attValues[10] }, /* Central Address Resolution */
-    { 0x0001u, (void *)&cy_ble_attValues[11] }, /* Resolvable Private Address Only */
-    { 0x0004u, (void *)&cy_ble_attValues[12] }, /* Service Changed */
+    { 0x0009u, (void *)&cy_ble_attValues[0] }, /* Device Name */
+    { 0x0002u, (void *)&cy_ble_attValues[9] }, /* Appearance */
+    { 0x0008u, (void *)&cy_ble_attValues[11] }, /* Peripheral Preferred Connection Parameters */
+    { 0x0001u, (void *)&cy_ble_attValues[19] }, /* Central Address Resolution */
+    { 0x0001u, (void *)&cy_ble_attValues[20] }, /* Resolvable Private Address Only */
+    { 0x0004u, (void *)&cy_ble_attValues[21] }, /* Service Changed */
     { 0x0002u, (void *)&cy_ble_attValuesCCCD[0] }, /* Client Characteristic Configuration */
-    { 0x0001u, (void *)&cy_ble_attValues[16] }, /* Alert Level */
+    { 0x0001u, (void *)&cy_ble_attValues[25] }, /* Alert Level */
 };
 
 static const cy_stc_ble_gatts_db_t cy_ble_gattDB[0x12u] = {
     { 0x0001u, 0x2800u /* Primary service                     */, 0x00000001u /*       */, 0x000Bu, {{0x1800u, NULL}}                           },
     { 0x0002u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0003u, {{0x2A00u, NULL}}                           },
-    { 0x0003u, 0x2A00u /* Device Name                         */, 0x01020001u /* rd    */, 0x0003u, {{0x0000u, (void *)&cy_ble_attValuesLen[0]}} },
+    { 0x0003u, 0x2A00u /* Device Name                         */, 0x01020001u /* rd    */, 0x0003u, {{0x0009u, (void *)&cy_ble_attValuesLen[0]}} },
     { 0x0004u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0005u, {{0x2A01u, NULL}}                           },
     { 0x0005u, 0x2A01u /* Appearance                          */, 0x01020001u /* rd    */, 0x0005u, {{0x0002u, (void *)&cy_ble_attValuesLen[1]}} },
     { 0x0006u, 0x2803u /* Characteristic                      */, 0x00020001u /* rd    */, 0x0007u, {{0x2A04u, NULL}}                           },

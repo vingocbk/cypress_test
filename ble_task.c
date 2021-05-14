@@ -16,6 +16,7 @@
 #include "task.h"  
 #include "timers.h"  
 #include "ias.h"
+#include "status_led_task.h"
 
 QueueHandle_t bleCommandQ;
 
@@ -27,10 +28,16 @@ void Task_Ble(void *pvParameters)
     DEBUG_PRINTF("Run Task_Ble!!!\r\n");
     
     /* Start BLE component and register generic event handler */
+    status_led_commands_t datasend_t = BLE_MILD_ALERT;
+    xQueueSend(statusLedCommandQ, &datasend_t, 0u);
     Cy_BLE_Start(AppCallBack);
+    /* Initialize BLE Services */
+    IasInit();
     
     for(;;){
-        vTaskDelay(pdMS_TO_TICKS(100u));
+        /* Cy_BLE_ProcessEvents() allows BLE stack to process pending events */
+        Cy_BLE_ProcessEvents();
+        //vTaskDelay(pdMS_TO_TICKS(100u));
     }
 }
 
@@ -83,7 +90,8 @@ void AppCallBack(uint32 event, void *eventParam)
             /* BLE link is established */
             keyInfo.SecKeyParam.bdHandle = (*(cy_stc_ble_gap_connected_param_t *)eventParam).bdHandle;
             Cy_BLE_GAP_SetSecurityKeys(&keyInfo);
-            //UpdateLedState();   
+            status_led_commands_t datasend_tt = BLE_NO_ALERT;
+            xQueueSend(statusLedCommandQ, &datasend_tt, 0u);
             break;
 
         case CY_BLE_EVT_GAPP_ADVERTISEMENT_START_STOP:

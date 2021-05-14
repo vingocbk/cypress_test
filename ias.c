@@ -57,7 +57,22 @@ void IasEventHandler(uint32_t event, void *eventParam)
     {
         alertLevel = *((cy_stc_ble_ias_char_value_t *)eventParam)->value->val;   
         //Cy_BLE_IASS_GetCharacteristicValue(CY_BLE_IAS_ALERT_LEVEL, sizeof(alertLevel), &alertLevel);
-        //switch
+        status_led_commands_t datasend = alertLevel;
+        xQueueSend(statusLedCommandQ, &datasend, 0u);
+//        switch(alertLevel){
+//            case BLE_NO_ALERT:
+//                
+//                xQueueSend(statusLedCommandQ, &datasend, 0u);
+//                break;
+//            case BLE_MILD_ALERT:
+//                xQueueSend(statusLedCommandQ, &datasend, 0u);
+//                break;
+//            case BLE_HIGH_ALERT:
+//                xQueueSend(statusLedCommandQ, &datasend, 0u);
+//                break;
+//            default:
+//                break;
+//        }
     }  
     
     
