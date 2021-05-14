@@ -1,0 +1,17 @@
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\PSoC_6_MCU_Hello_World_Example01.cydsn\PSoC_6_MCU_Hello_World_Example01.cyprj|f4b3ecab-f09a-48c9-8947-ded64468ac72
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|05047413-ca5c-411a-918b-12605718d3f7
+C:\Users\Admin\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|d5581e47-d8c4-413d-a1eb-de88535d0b60
+C:\Users\Admin\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|4f97bda5-3728-4057-8f08-81d05d11c1a5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|20ac3cbf-c6fb-4811-a2dd-18fa62231533
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|1387a552-bfe2-4fdd-8f18-3c7d19550dc7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|99ba63d6-9b02-4667-aba9-f537e23b33bd
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE218136_EINK_CapSense_RTOS01.cydsn\CE218136_EINK_CapSense_RTOS01.cyprj|90bda118-57d1-4b1a-8974-4b3fe31bcdaa
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE223727_EmWin_EInk_Display01.cydsn\CE223727_EmWin_EInk_Display01.cyprj|228a506a-9e5c-4ae8-97c0-a02260225fb0
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE217637_BLE_Find_Me01.cydsn\CE217637_BLE_Find_Me01.cyprj|f5472707-cabe-4d38-9191-a767f611cd0c
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\Bootloader_BLE_App001.cydsn\Bootloader_BLE_App001.cyprj|6ce5b756-2e54-45c3-9b13-0c9e634da895
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE217631_BLE_Alert_Notification01.cydsn\CE217631_BLE_Alert_Notification01.cyprj|acfbc231-77f2-43e7-8ba8-e4d116b5516d
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE212736_PSoC6BLE_FindMe01.cydsn\CE212736_PSoC6BLE_FindMe01.cyprj|735aa5b6-1e1e-4039-8335-14d901ee91d5
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE222793_MotionSensor_RTOS01.cydsn\CE222793_MotionSensor_RTOS01.cyprj|a128a5c6-3fac-4864-8ce2-eea031b68fb2
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE217639_BLE_Heart_Rate_Server01.cydsn\CE217639_BLE_Heart_Rate_Server01.cyprj|5e913555-eec4-49dc-89a1-0a295e1b1ecc
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\Test_RTOS_IAS.cydsn\Test_RTOS_IAS.cyprj|8c59a6ba-a15d-4eac-a7dc-331eabb65a65
+D:\Cypress\PSocCreater\PSoc6_CY8CKIT\CE218138_BLE_Thermometer_RTOS01.cydsn\CE218138_BLE_Thermometer_RTOS01.cyprj|5ff8d91b-26f1-4310-9daa-45af39c97b5b
